@@ -36,7 +36,7 @@ The job takes 87 minutes.
 To enable distribution we need to make sure our repo is connected to Nx Cloud (which we can do by running `nx connect`). After that we need to add the following line to our CI config:
 
 ```
-npx nx-cloud start-ci-run --distributes-on="15 linux-medium-plus-js" --stop-agents-after="e2e-ci"
+npx nx-cloud start-ci-run --distribute-on="15 linux-medium-plus-js" --stop-agents-after="e2e-ci"
 ```
 
 This informs Nx that we can distribute commands using 15 linux VMs.
